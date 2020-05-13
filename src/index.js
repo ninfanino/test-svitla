@@ -7,6 +7,8 @@ import { createStore, applyMiddleware, compose } from 'redux';
 import { createEpicMiddleware } from 'redux-observable';
 import { reducers, epics } from './redux/reducers';
 
+// Como no sabía cual era el alcance del proyecto deje seteado un middleware, Redux Observable.
+
 const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
 const epicMiddleware = createEpicMiddleware();
 
